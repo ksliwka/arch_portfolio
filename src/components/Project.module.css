@@ -1,0 +1,17 @@
+.project__main {
+  height: 80vh;
+}
+
+.project__navbar {
+  background-color: white !important;
+}
+
+.project__brand {
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+.project__main h1 {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+}
