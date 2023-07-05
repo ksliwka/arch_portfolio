@@ -1,23 +1,23 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
-import ChildrensHousePage from "./pages/ChildrensHouse";
-import SocialHousingPage from "./pages/SocialHousing";
-import HousingComplexPage from "./pages/HousingComplex";
-import ElderlyPeopleHousingPage from "./pages/ElderlyPeopleHousing";
-import ClimbingCenterPage from "./pages/ClimbingCenter";
-
-const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
-  { path: "/childrenshouse", element: <ChildrensHousePage /> },
-  { path: "/socialhousing", element: <SocialHousingPage /> },
-  { path: "/housingcomplex", element: <HousingComplexPage /> },
-  { path: "/elederlypeoplehousing", element: <ElderlyPeopleHousingPage /> },
-  { path: "/climbingcenter", element: <ClimbingCenterPage /> },
-]);
+import ProjectDetailPage from "./pages/ProjectDetail";
+import { data } from './data';
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {data.map((project) => (
+          <Route
+            key={project.id}
+            path={`/detail/:projectId`} 
+            element={<ProjectDetailPage />}
+          />
+        ))}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

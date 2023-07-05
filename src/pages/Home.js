@@ -1,6 +1,7 @@
 import { Fragment } from "react";
-import { Link, RouterProvider } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
+import { data } from "../data"; 
 
 function HomePage() {
   return (
@@ -11,31 +12,14 @@ function HomePage() {
           <h1>WELCOME</h1>
         </Col>
         <Col>
-          <div>
-            <Link to="/childrenshouse" className="link">
-              <span>(01)</span>Children's House
-            </Link>
-          </div>
-          <div>
-            <Link to="/climbingcenter" className="link">
-              <span>(02)</span>Climbing Center
-            </Link>
-          </div>
-          <div>
-            <Link to="/housingcomplex" className="link">
-              <span>(03)</span>Housing Complex
-            </Link>
-          </div>
-          <div>
-            <Link to="/socialhousing" className="link">
-              <span>(04)</span>Social Housing
-            </Link>
-          </div>
-          <div>
-            <Link to="/elederlypeoplehousing" className="link">
-              <span>(05)</span>Elderly People Housing
-            </Link>
-          </div>
+          {data.map((project) => (
+            <div key={project.id}>
+              <Link to={`/detail/${project.id}`} className="link">
+                <span>({project.id.toString().padStart(2, '0')})</span>
+                {project.title}
+              </Link>
+            </div>
+          ))}
         </Col>
       </Row>
     </Fragment>
