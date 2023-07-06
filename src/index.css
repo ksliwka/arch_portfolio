@@ -56,7 +56,6 @@ code {
 
 .main h1 {
   color: #fff34b;
-  /* font-family: 'Krona One', sans-serif; */
   font-family: "Gemunu Libre", sans-serif;
   font-size: 5rem;
   font-weight: 600;
@@ -67,6 +66,18 @@ code {
   margin-right: 15px;
   align-self: flex-start;
   margin-top: 6px;
+}
+
+.main__link {
+  color: white;
+  font-family: "Gemunu Libre", sans-serif;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.main__link:hover {
+  color: #fdf8b4;
 }
 
 .rectangle {

@@ -10,7 +10,7 @@ import classes from "./Project.module.css";
 
 const Project = ({ project }) => {
   return (
-    <div>
+    <Container>
       <Navbar sticky="top" className={classes.project__navbar}>
         <Row className="w-100">
           <Col className="text-start">
@@ -53,7 +53,7 @@ const Project = ({ project }) => {
           <Image src={image} fluid></Image>
         </Row>
       ))}
-    </div>
+    </Container>
   );
 };
 
