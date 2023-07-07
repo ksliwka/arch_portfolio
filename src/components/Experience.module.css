@@ -1,0 +1,24 @@
+.experience {
+  height: 80vh;
+  border-top: 1px solid rgb(205, 205, 205);
+}
+
+.experience h2 {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/* .experience__row{
+  border-top: 1px solid black;
+} */
+
+.experience h3{
+  font-size: 1.5rem;
+  
+}
+
+.experience__year {
+  font-family: "Gemunu Libre", sans-serif;
+}

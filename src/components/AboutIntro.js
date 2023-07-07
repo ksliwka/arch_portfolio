@@ -9,7 +9,7 @@ const AboutIntro = () => {
       >
         <Col>
           <h1>Katarzyna Śliwka</h1>
-          <p>
+          <p className="ms-2">
             Hello, I’m Katarzyna Śliwka, a passionate architecture student ready
             to make my mark in the industry! I thrive on challenges and am
             always seeking opportunities to grow both personally and

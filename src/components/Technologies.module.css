@@ -1,0 +1,13 @@
+.technologies h2 {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.technologies {
+  height: 40vh;
+}
+
+.technologies li {
+  list-style: none;
+}
