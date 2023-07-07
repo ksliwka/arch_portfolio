@@ -42,11 +42,15 @@
 
 .projectContainer {
   position: relative;
-  padding-bottom: 70px; 
+  padding-bottom: 70px;
 }
 .stickyLink {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.main_image_row {
+  margin-bottom: 150px;
 }

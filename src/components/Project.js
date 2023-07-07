@@ -31,7 +31,7 @@ const Project = ({ project }) => {
       <Row className="justify-content-center">
         <div className={`position-fixed bottom-0 ${classes.stickyLink}`}>
           <Link to="/" className={`${classes.back} text-center`}>
-            <AiOutlineArrowLeft className="me-2 ms-1"/>
+            <AiOutlineArrowLeft className="me-2 ms-1" />
             Go Back
           </Link>
         </div>
@@ -45,9 +45,9 @@ const Project = ({ project }) => {
         </Col>
         <Col sm={3}></Col>
       </Row>
-      <Row>
+      <Row className={classes.main_image_row}>
         <Col>
-          <Image src={project.main} fluid className="mt-5"></Image>
+          <Image src={project.main} fluid className="mt-5 "></Image>
         </Col>
       </Row>
       {project.images.map((image, index) => (
@@ -55,13 +55,15 @@ const Project = ({ project }) => {
           className={`mt-4  align-items-center ${
             index % 2 === 0 ? "flex-row-reverse" : ""
           }`}
-          style={{ height: "80vh" }}
+          style={{ margin: "200px 0" }}
         >
-          <Col sm={4} className="text-center">
+          <Col sm={5} className="text-center">
             <h3 className={classes.image__description}>{image.description}</h3>
           </Col>
           <Col>
-            <Image src={image.image} fluid />
+            <div style={{ maxHeight: "100%", overflow: "hidden" }}>
+              <Image src={image.image} fluid />
+            </div>
           </Col>
         </Row>
       ))}
