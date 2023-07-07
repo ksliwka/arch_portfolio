@@ -36,7 +36,7 @@ const Technologies = () => {
     <Container className="mb-4">
       <Row className={classes.technologies}>
         <h2>Used technologies</h2>
-        <Col className="ms-5">
+        <Col className="ms-5 mt-5">
           <ul>
             {technologies.map((technology) => (
               <li >{technology.skill}</li>

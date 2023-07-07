@@ -4,7 +4,7 @@ import { experience } from "../data/experience";
 
 const Experience = () => {
   return (
-    <Container className="mb-4">
+    <Container className="mb-4 mt-5">
       <Row
         className={`align-items-top justify-content-top  ${classes.experience}`}
       >
