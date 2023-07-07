@@ -15,8 +15,14 @@ export const data = [
     location: "Baghere Village",
     author: "Katarzyna Śliwka, Julia Dolata",
     main: main_baghere,
-    plan: master_plan,
-    images: [schema, hospital_3d, furniture_3d, sections, water_schema],
+    images: [
+      { image: master_plan, description: "master plan" },
+      { image: schema, description: "schema" },
+      { image: hospital_3d, description: "hospital schema" },
+      { image: furniture_3d, description: "furniture" },
+      { image: sections, description: "section" },
+      { image: water_schema, description: "water" },
+    ],
     description:
       "The structure can protect the inhabitants from the negative effects of weather conditions but can also help solve local problems such as difficult access to pure drinking water, malnutrition, or lack of micronutrients. The inner part contains all the essential functions. Having in mind the character of the spaces and respect for the privacy of inhabitants, we grouped them into private and public zones. The outer layer creates a shield for the interior. The shape of the structure enabled us to create a water purification system integrated with the building. We hope that the impelmented improvements will have an impact on children’s quality of life and will help them to achieve a better life.",
   },
