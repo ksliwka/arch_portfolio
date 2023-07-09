@@ -15,7 +15,7 @@ const Project = ({ project }) => {
     <Container className={classes.projectContainer}>
       <Navbar sticky="top" className={classes.project__navbar}>
         <Row className="w-100">
-          <Col className="text-start">
+          <Col className="text-start d-sm-block d-none">
             <Navbar.Text>{project.location}</Navbar.Text>
           </Col>
           <Col className="text-center">
@@ -23,7 +23,7 @@ const Project = ({ project }) => {
               {project.title}
             </NavbarBrand>
           </Col>
-          <Col className="text-end">
+          <Col className="text-end d-sm-block d-none">
             <Navbar.Text>{project.author}</Navbar.Text>
           </Col>
         </Row>

@@ -8,13 +8,13 @@ function HomePage() {
     <Fragment>
       <div className="rectangle"></div>
       <Row className="main align-items-center justify-content-center">
-        <Col className="text-center">
+        <Col className="about text-center">
           <h1>WELCOME</h1>
           <Link to={`/about`} className="main__link">
             About me
           </Link>
         </Col>
-        <Col>
+        <Col >
           {data.map((project) => (
             <div key={project.id}>
               <Link to={`/detail/${project.id}`} className="link">
