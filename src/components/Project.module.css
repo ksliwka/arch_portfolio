@@ -71,3 +71,16 @@
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+
+@media(max-width: 576px){
+  .image__description {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .project__main h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+}
+
