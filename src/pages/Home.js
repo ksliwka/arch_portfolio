@@ -3,19 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 import { data } from "../data";
 
-function HomePage({ changeColor }) {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/") {
-      changeColor("#000000");
-    }
-  }, [changeColor, location]);
+function HomePage() {
 
   return (
     <Fragment>
       <div className="rectangle"></div>
-      <Row className="main align-items-center justify-content-center black-background">
+      <Row className="main align-items-center justify-content-center">
         <Col className="about text-center">
           <h1>WELCOME</h1>
           <Link to={`/about`} className="main__link">
