@@ -16,7 +16,6 @@ code {
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap");
 
 .link {
-  /* font-family: 'Gemunu Libre', sans-serif; */
   font-family: "Inter", sans-serif;
   text-decoration: none;
   letter-spacing: 3px;
@@ -99,4 +98,19 @@ code {
   top: 0;
   z-index: -4;
   background-color: #1a1a1a;
+}
+
+.black-background {
+  background-color: black;
+}
+
+
+
+@media(max-width: 576px){
+  .link{
+    font-size: 15px
+  }
+  .main span{
+    font-size: 10px;
+  }
 }

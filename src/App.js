@@ -5,10 +5,13 @@ import ProjectDetailPage from "./pages/ProjectDetail";
 import { data } from "./data";
 
 function App() {
+  const changeColor = (color) => {
+    document.body.style.backgroundColor = color;
+  };
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage changeColor={changeColor}/>} />
         {data.map((project) => (
           <Route
             key={project.id}

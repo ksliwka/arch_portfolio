@@ -1,20 +1,28 @@
-import { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Fragment, useEffect  } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 import { data } from "../data";
 
-function HomePage() {
+function HomePage({ changeColor }) {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      changeColor("#000000");
+    }
+  }, [changeColor, location]);
+
   return (
     <Fragment>
       <div className="rectangle"></div>
-      <Row className="main align-items-center justify-content-center">
+      <Row className="main align-items-center justify-content-center black-background">
         <Col className="about text-center">
           <h1>WELCOME</h1>
           <Link to={`/about`} className="main__link">
             About me
           </Link>
         </Col>
-        <Col >
+        <Col>
           {data.map((project) => (
             <div key={project.id}>
               <Link to={`/detail/${project.id}`} className="link">
