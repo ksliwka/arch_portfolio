@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import classes from "./Experience.module.css";
 import { experience } from "../data/experience";
+import { BsArrowDownRight } from "react-icons/bs";
 
 const Experience = () => {
   return (
@@ -13,9 +14,12 @@ const Experience = () => {
         </Col>
         {experience.map((item) => (
           <Row>
-            <Col sm={3} lg={2} className="ms-5 ">
+            <Col md={4} lg={3} className=" mt-xs-5 ">
               <h3 className={`text-muted ${classes.experience__year}`}>
-                {item.year}
+                {item.year}{" "}
+                <BsArrowDownRight
+                  className={`d-md-none ${classes.right_arrow}`}
+                />
               </h3>
             </Col>
             <Col>

@@ -14,10 +14,10 @@ const AboutNavbar = () => {
               Go Back
             </Link>
           </Col>
-          <Col className="text-center">
+          <Col className="text-center d-md-block d-none">
             <NavbarBrand className={classes.about__brand}>About</NavbarBrand>
           </Col>
-          <Col className="text-end">
+          <Col className="text-end d-md-block d-none">
             <Navbar.Text>Katarzyna Śliwka</Navbar.Text>
           </Col>
         </Row>

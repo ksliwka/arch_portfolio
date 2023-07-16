@@ -33,15 +33,13 @@ export const technologies = [
 
 const Technologies = () => {
   return (
-    <Container className="mb-4">
-      <Row className={classes.technologies}>
+    <Container >
+      <Row className={`  ${classes.technologies}`}>
         <h2>Used technologies</h2>
-        <Col className="ms-5 mt-5">
-          <ul>
+        <Col className="mt-5">
             {technologies.map((technology) => (
-              <li >{technology.skill}</li>
+              <p>{technology.skill}</p>
             ))}
-          </ul>
         </Col>
       </Row>
     </Container>
