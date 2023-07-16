@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
   Image,
   Row,
@@ -11,6 +12,19 @@ import { Link } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const Project = ({ project }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(delay);
+  }, []);
+
+  if (isLoading) {
+    return <div className={classes.loading}>Loading...</div>;
+  }
   return (
     <Container className={classes.projectContainer}>
       <Navbar sticky="top" className={classes.project__navbar}>

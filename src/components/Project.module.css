@@ -54,3 +54,18 @@
 .main_image_row {
   margin-bottom: 150px;
 }
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+

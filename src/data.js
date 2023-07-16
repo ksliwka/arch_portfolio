@@ -11,7 +11,7 @@ import climbing_wall from "./assets/kells/climbing_wall_3d_kells.png";
 import master_plan_kells from "./assets/kells/master_plan_kells.png";
 import main_complex from "./assets/complex/main_3d_complex.png";
 import master_plan_complex from "./assets/complex/plan_complex.png";
-import image_complex from "./assets/complex/main_3d_complex.png";
+import image_complex from "./assets/complex/3d_complex.png";
 import main_social from "./assets/social/main.png";
 import plan_social from "./assets/social/plan.png";
 import schema_social from "./assets/social/schema.png";
